@@ -10,10 +10,12 @@ repositories {
 }
 
 dependencies {
+    implementation("io.swagger.parser.v3:swagger-parser:2.1.15")
+    testImplementation("io.kotest:kotest-runner-junit5:5.6.2")
     testImplementation(kotlin("test"))
 }
 
-tasks.test {
+tasks.withType<Test>().configureEach {
     useJUnitPlatform()
 }
 
