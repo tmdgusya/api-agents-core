@@ -40,3 +40,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### For Test ###
+src/test/kotlin/running/SwaggerParserTest.kt
